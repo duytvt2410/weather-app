@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+html,
+body {
+    height: 100%
+}
+
+* {
+    padding: 0px;
+    margin: 0px
+}
+
+body {
+    background-color: #a5a5b1;
+    display: grid;
+    place-items: center
+}
+
+@media only screen and (max-width: 990px) {
+  #forecast-weather{margin-top: 10px !important; font-size: 10px}
+  #detail-info{margin-top: -30px !important}
+}
+
+@media only screen and (max-width: 895px) {
+  #detail-info{font-size: 12px !important;}
+  #label-temperature{font-size: 40px !important;}
+  #temp_max{font-size: 12px !important;}
+  #temp_min{font-size: 12px !important;}
+  #feel_like{font-size: 12px !important;}
+  #label-description{font-size: 16px !important;}
+  .next_time_icon img {width: 40px !important}
+}
+
+@media only screen and (max-width: 767px) {
+  #label-temperature{font-size: 55px !important;}
+  #temp_max{font-size: 14 !important;}
+  #temp_min{font-size: 14px !important;}
+  #feel_like{font-size: 14px !important;}
+  #label-description{font-size: 20px !important;}
+  #forecast-weather{font-size: 8px !important}
+  .next_time_icon img {width: 40px}
+}
+
+@media only screen and (max-width: 480px) {
+  .day {margin-right: 25px !important}
+  .night {margin-left: 25px !important}
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 50px;
+    color: #6f707d;
+    font-family: 'Marcellus', serif
+}
+
+#label-temperature {
+    font-size: 55px;
+    color: #2b304d
+}
+
+.temp {
+    place-items: center
+}
+
+.temp-details>div>span,
+.grey {
+    color: #a3acc1;
+    font-size: 12px;
+    float: right;
+}
+
+.fa {
+    color: #a5a5b1
+}
+
+*:focus {
+    outline: none
+}
+
+.next_time_icon img {
+    width: 80px;
+}
+
+.two {
+    background:linear-gradient(-45deg,#fff calc(50% - 1px), #aaa, #fff calc(50% + 1px));
+}
+
+.day {
+    margin-right: 50px;
+}
+
+.night {
+     margin-left: 50px;
+}
+
+#forecast-weather {
+    margin-top: -50px;
+}
+
+#main {
+    margin-top: 50px;
+}
