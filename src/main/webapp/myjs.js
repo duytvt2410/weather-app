@@ -27,7 +27,7 @@ $(document).ready(function(){
 		}
 
 		function getCurrenWeather(yourCity) {
-			var url = "https://appweatherapi.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?q="+yourCity+"&lang=vi&appid=04e7cab8aad69342c877a74f5efaef68&units=metric";
+			var url = "https://api.openweathermap.org/data/2.5/weather?q="+yourCity+"&lang=vi&appid=04e7cab8aad69342c877a74f5efaef68&units=metric";
 			$.ajax({
 			    url: url,
 			    type: "get",
@@ -67,7 +67,7 @@ $(document).ready(function(){
 		}
 
 		function getNextWeather(yourCity) {
-			var url = "https://appweatherapi.herokuapp.com/http://api.openweathermap.org/data/2.5/forecast?q="+yourCity+"&lang=vi&appid=04e7cab8aad69342c877a74f5efaef68&units=metric";
+			var url = "https://api.openweathermap.org/data/2.5/forecast?q="+yourCity+"&lang=vi&appid=04e7cab8aad69342c877a74f5efaef68&units=metric";
 			$.ajax({
 			    url: url,
 			    type: "get",
