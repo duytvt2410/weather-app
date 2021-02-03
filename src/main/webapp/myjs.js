@@ -108,13 +108,12 @@ $(document).ready(function(){
 					dt_inWeather.setHours(parseInt(txt_dt.split(" ")[1].split(":")[0]));
 					if(dt_inWeather.getDate() == nowdate.getDate()) {
 						if(parseInt(txt_dt.split(" ")[1].split(":")[0]) == 9) {
-							$("#next_day_" + limit + " .day .next_time").text(days[new Date(txt_dt.split(" ")[0]).getDay()]);
+							$("#next_day_" + limit + " .next_time").text(days[new Date(txt_dt.split(" ")[0]).getDay()]);
 							$("#next_day_" + limit + " .day .next_time_icon img").attr("src", "icon-weather/" + res.list[i].weather[0].icon + ".svg");
 							$("#next_day_" + limit + " .day .next_time_hum").text(res.list[i].main.humidity + "%");
 							$("#next_day_" + limit + " .day .next_time_temp").text(Math.ceil(parseFloat(res.list[i].main.temp)) + "°C");
 						} 
 						if(parseInt(txt_dt.split(" ")[1].split(":")[0]) == 21) {
-							$("#next_day_" + limit + " .night .next_time").text(days[new Date(txt_dt.split(" ")[0]).getDay()]);
 							$("#next_day_" + limit + " .night .next_time_icon img").attr("src", "icon-weather/" + res.list[i].weather[0].icon + ".svg");
 							$("#next_day_" + limit + " .night .next_time_hum").text(res.list[i].main.humidity + "%");
 							$("#next_day_" + limit + " .night .next_time_temp").text(Math.ceil(parseFloat(res.list[i].main.temp)) + "°C");
